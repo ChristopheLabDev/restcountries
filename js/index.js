@@ -35,16 +35,6 @@ window.addEventListener('load', fetchCountries);
 
 
 /*
-const fetchCountries = async () =>{
-    const url = `https://restcountries.com/v3.1/region/europe/?fields=name`;
-    const response =  await fetch(url);
-    console.log(res);
-};
-
-
-
-
-/*
 // code Frank
  async function render() {
 
