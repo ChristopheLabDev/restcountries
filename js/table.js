@@ -10,10 +10,10 @@ async function loadIntoTable() {
     */
     for (const country of countries) {
         name += `<tr class="table-bordered">   
-                        <td> ${country.name.official} </td>
-                        <td> ${country.area}</td>
-                        <td> ${country.population}</td>
-                        <td> ${country.capital}</td>
+                        <td class="text-nowrap"><strong> ${country.name.official} </strong></td>
+                        <td class="text-end"> ${formatage.format(country.area)}</td>
+                        <td class="text-end"> ${formatage.format(country.population)}</td>
+                        <td class="text-start text-nowrap"> ${country.capital}</td>
                 </tr>`;           
 };
 const querySelector = document.querySelector('#table');
